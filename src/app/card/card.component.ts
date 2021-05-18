@@ -23,4 +23,13 @@ export class CardComponent implements OnInit {
   onDelete(quote: any){
     this.onDeleteQuote.emit(quote)
   }
+
+  deleteQuote(quote: Quote){
+    console.log('clicked');
+
+    this.quoteService
+    .deleteQuote(quote)
+    .subscribe(
+      () => (this.quotes = this.quotes.filter(q => q.id !== quote.id)));
+  }
 }

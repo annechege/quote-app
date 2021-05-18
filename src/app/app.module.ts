@@ -8,7 +8,8 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { HeaderComponent } from './header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { HttpClientModule, HttpHandler } from '@angular/common/http'
+import { HttpClientModule, HttpHandler } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule, HttpHandler } from '@angular/common/http'
     BrowserModule,
     NgbModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

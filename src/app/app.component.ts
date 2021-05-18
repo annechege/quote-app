@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Quote } from './quote';
+import { QuoteService} from '../app/services/quote.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'quote-app';
+
+  addQuote(quote: Quote){
+    this.QuoteService
+  }
 }

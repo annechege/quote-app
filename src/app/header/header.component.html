@@ -1,18 +1,18 @@
 <div class="header-form-container">
-  <form>
+  <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="exampleInputEmail1">Enter name</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)] = "publisher" name="publisher" placeholder="Enter Name">
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Enter author's name</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Author's Name">
+      <input type="text" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" [(ngModel)] = "author" name="author" placeholder="Enter Author's Name">
     </div>
 
     <div class="form-group">
       <label for="exampleInputPassword1">Enter Quote</label>
-      <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+      <textarea name="" class="form-control" id="" [(ngModel)] = "quote" name="quote" cols="30" rows="10"></textarea>
     </div>
-    <button type="text" class="btn button btn-primary">Submit quote</button>
+    <button type="submit" class="btn button btn-primary">Submit quote</button>
   </form>
 </div>
