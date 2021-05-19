@@ -1,7 +1,7 @@
 <div class="votes">
-  <button  (click)='upvote()'>Like</button>
+  <button class="btn btn-success" (click)='upvote()'>Like</button>
   <div id="upVote">Up votes<br>{{newQuote.upvote}}</div>
-  <button  (click)='downvote()'>Dislike</button>
+  <button class="btn btn-warning" (click)='downvote()'>Dislike</button>
   <div id="downVote">Down Votes<br>{{newQuote.downvote}}</div>
   <button  id="del" (click)='deleteQuote(true)'>Delete</button>
 </div>
