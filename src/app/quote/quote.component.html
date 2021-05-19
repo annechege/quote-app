@@ -1,9 +1,19 @@
-<div class="item active">
-  <blockquote>
-      <div class="row">
-          <div class="quote">
-              <p><em>{{ quote }}</em></p>
-          </div>
+<div class="container-fluid">
+  <div class="card-header text-center">
+    <h1>Quotes</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-6 card">
+      <div *ngFor="let quote of sortQuotes let i= index" class="quote">
+        <p>{{quote.words}}</p>
+        <app-quote-details *ngIf='quote' bind-newQuote='quote' (isRead)='quoteDelete($event,i)'>
+        </app-quote-details>
+          by <span id="name"><strong>{{quote.name}}</strong></span>
       </div>
-  </blockquote>
+    </div>
+    <div class="col-md-3">
+      <app-quote-form (add)="addedQuote($event)"></app-quote-form>
+    </div>
+  </div>
 </div>
+

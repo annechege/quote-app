@@ -1,10 +1,4 @@
-.item blockquote {
-  border-left: none;
-  margin: 0;
-}
-.item blockquote p:before {
-  content: "\f10d";
-  font-family: 'Fontawesome';
-  float: left;
-  margin-right: 10px;
+.quote{
+  background-color: rgb(185, 238, 220);
+  margin: 6px;
 }
