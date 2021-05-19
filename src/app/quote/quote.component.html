@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-6">
-      <div *ngFor="let quote of sortQuotes let i= index" class="quote-body">
+    <div class="col-md-6 card">
+      <div *ngFor="let quote of sortQuotes let i= index" class="quote">
         <p>{{quote.words}}</p>
         <app-quote-details *ngIf='quote' bind-newQuote='quote' (isRead)='quoteDelete($event,i)'>
         </app-quote-details>
