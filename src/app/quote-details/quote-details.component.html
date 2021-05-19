@@ -1,9 +1,0 @@
-<div class="votes">
-  <button class="btn btn-success" (click)='upvote()'>Like</button>
-  <div id="upVote">Up votes<br>{{newQuote.upvote}}</div>
-  <button class="btn btn-warning" (click)='downvote()'>Dislike</button>
-  <div id="downVote">Down Votes<br>{{newQuote.downvote}}</div>
-  <button class="btn btn-danger" id="del" (click)='deleteQuote(true)'>Delete</button>
-</div>
-<p >Author: <span class="author">{{newQuote.author}}</span></p>
-Posted: {{newQuote.datePosted| dateAgo}} days ago.
